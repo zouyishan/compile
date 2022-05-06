@@ -11,6 +11,8 @@
 ![构建SLR(1)分析表](https://user-images.githubusercontent.com/57765968/167157030-fa108d6b-91b0-4987-95af-ac5d14a36311.png)
 
 5. 通过SLR(1)分析表，移进规约输入的字符串
+
+
 ![LR流程](https://user-images.githubusercontent.com/57765968/167158058-eb293f90-00bc-4dad-8145-2e4b64afad20.png)
 
 

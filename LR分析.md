@@ -1,4 +1,5 @@
 > tips: 题目描述在后面
+
 嗯，这个题比较复杂，写出来要结合前面的follow集代码，但是做到这的时候follow集忘的差不多了，以前写的代码还有一些小bug，而且代码还很长。而且follow集代码和构建SLR(1)分析表变量还有很多重合的地方。
 
 这个算法的流程大致是这样：
@@ -7,9 +8,12 @@
 2. 求项目集规范族：描述简单点就是 求集合闭包(closure) -> 移进(go) -> 对移进的字符不同进行分类，分类的集合再次求闭包。直到所有集合都不能移进为止。
 3. 判断冲突，冲突分为 “移进-归约” “归约-归约”。如果有冲突就找产生式最前面的非终结符的follow集，如果follow集不冲突那就可以解决。
 4. 构建SLR(1)分析表：这个比较复杂，直接看图吧：
-//TODO 图片
+![构建SLR(1)分析表](https://user-images.githubusercontent.com/57765968/167157030-fa108d6b-91b0-4987-95af-ac5d14a36311.png)
+
 5. 通过SLR(1)分析表，移进规约输入的字符串
-//TODO 图片
+![LR流程](https://user-images.githubusercontent.com/57765968/167158058-eb293f90-00bc-4dad-8145-2e4b64afad20.png)
+
+
 
 **我是如何做/思考这道题的**
 
@@ -568,3 +572,5 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
+![题目描述](https://user-images.githubusercontent.com/57765968/167157530-42ff0aac-355a-4acf-8231-6a7a603962f9.png)
+

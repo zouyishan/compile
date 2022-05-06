@@ -1,4 +1,4 @@
-没想好如何描述
+这里学校的OJ编译过不了，伤，放到GitHub记录下吧
 ```cpp
 #include <iostream>
 #include <algorithm>
